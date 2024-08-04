@@ -1,19 +1,23 @@
-MelodyToken Smart Contract
+# MelodyToken Smart Contract
+
 This Solidity program is a simple "TOKEN CONTRACT" that represents the token called MelodyToken, abbreviated by MLDY, with functionalities for managing its total supply through mint and burn functions.
 
-Description
+## Description
+
 This program is a smart contract written in Solidity, a programming language used for developing smart contracts on the Ethereum blockchain. The contract represents a token named "MELODY TOKEN" with the symbol "MLDY" and includes functionalities to mint (create) and burn (destroy) tokens, which affects the total supply using the OpenZeppelin ERC20 implementation. Additionally, it uses a mapping of addresses to balances, which enables the contract to keep track of the balance of MLDY tokens held by each address. The contract also allows for token transfers between addresses.
 
-Getting Started
-Executing Program
+## Getting Started
+
+### Executing Program
+
 To run this program, you can use Remix, an online Solidity IDE. Follow the steps below to get started:
 
-Go to the Remix Ethereum IDE.
-Create a new file by clicking on the "+" icon in the left-hand sidebar.
-Save the file with a .sol extension (e.g., MelodyToken.sol).
-Copy and paste the following code into the file:
-solidity
-Copy code
+1. Go to the [Remix Ethereum IDE](https://remix.ethereum.org/).
+2. Create a new file by clicking on the "+" icon in the left-hand sidebar.
+3. Save the file with a `.sol` extension (e.g., `MelodyToken.sol`).
+4. Copy and paste the following code into the file:
+
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.25;
 
@@ -58,32 +62,42 @@ contract MelodyToken is ERC20 {
         return _melodyTotalSupply;
     }
 }
-Compiling the Code
-Click on the "Solidity Compiler" tab in the left-hand sidebar.
-Ensure the "Compiler" option is set to "0.8.25" (or another compatible version).
-Click on the "Compile MelodyToken.sol" button.
-Deploying the Contract
-Go to the "Deploy & Run Transactions" tab in the left-hand sidebar.
-Select the "MelodyToken" contract from the dropdown menu.
-Click on the "Deploy" button.
-Interacting with the Contract
-Mint Tokens
-Select the mint function.
-Enter the address and the number of tokens to mint.
-Click on the "transact" button.
-Burn Tokens
-Select the burn function.
-Enter the number of tokens to burn.
-Click on the "transact" button.
-Transfer Tokens
-Select the transfer function.
-Enter the recipient address and the number of tokens to transfer.
-Click on the "transact" button.
-Check Balances
-Select the balanceOf function.
-Enter the address and click on the "call" button.
-The balance of the entered address will be displayed.
-View Token Details
-Retrieve the values of melodyOwner and totalSupply from the deployed contract.
-Authors
+```
+
+## Compiling the Code
+1. Click on the "Solidity Compiler" tab in the left-hand sidebar.
+2. Ensure the "Compiler" option is set to "0.8.25" (or another compatible version).
+3. Click on the "Compile MelodyToken.sol" button.
+
+## Deploying the Contract
+1. Go to the "Deploy & Run Transactions" tab in the left-hand sidebar.
+2. Select the "MelodyToken" contract from the dropdown menu.
+3. Click on the "Deploy" button.
+
+## Interacting with the Contract
+### Mint Tokens
+1. Select the mint function.
+2. Enter the address and the number of tokens to mint.
+3. Click on the "transact" button.
+
+### Burn Tokens
+1. Select the burn function.
+2. Enter the number of tokens to burn.
+3. Click on the "transact" button.
+
+### Transfer Tokens
+1. Select the transfer function.
+2. Enter the recipient address and the number of tokens to transfer.
+3. Click on the "transact" button.
+
+### Check Balances
+1. Select the balanceOf function.
+2. Enter the address and click on the "call" button.
+3. The balance of the entered address will be displayed.
+
+### View Token Details
+1. Retrieve the values of melodyOwner and totalSupply from the deployed contract.
+
+## Authors
 Sneha Thapa [https://www.linkedin.com/in/sneha-thapa-00a353270/]
+
